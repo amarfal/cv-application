@@ -61,6 +61,7 @@
   font-family: inherit;
   transition: all 0.3s ease;
   background-color: #ffffff;
+  color: #000000;
 }
 
 .experience-form textarea {
@@ -122,6 +123,12 @@
 .experience-entries {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+}
+
+.experience-entries h3 {
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  font-size: 1.1rem;
 }
 
 .experience-entry-edit {
