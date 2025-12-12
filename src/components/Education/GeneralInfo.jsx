@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../styles/GeneralInfo.css";
+import "../../styles/GeneralInfo.css";
 
 export default function GeneralInfo() {
   const [formData, setFormData] = useState({
@@ -97,4 +97,3 @@ export default function GeneralInfo() {
     </div>
   );
 }
-

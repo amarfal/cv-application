@@ -1,7 +1,7 @@
 import "./App.css";
-import GeneralInfo from "./components/GeneralInfo";
-import Education from "./components/Education";
-import Experience from "./components/Experience";
+import GeneralInfo from "./components/Education/GeneralInfo";
+import Education from "./components/Education/Education";
+import Experience from "./components/WorkExperience/Experience";
 
 function App() {
   return (

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../styles/Experience.css";
+import "../../styles/Experience.css";
 
 export default function Experience() {
   const [isEditing, setIsEditing] = useState(true);
@@ -192,10 +192,12 @@ export default function Experience() {
                       <strong>Position:</strong> {entry.positionTitle}
                     </p>
                     <p>
-                      <strong>Responsibilities:</strong> {entry.responsibilities}
+                      <strong>Responsibilities:</strong>{" "}
+                      {entry.responsibilities}
                     </p>
                     <p>
-                      <strong>Duration:</strong> {entry.startDate} - {entry.endDate}
+                      <strong>Duration:</strong> {entry.startDate} -{" "}
+                      {entry.endDate}
                     </p>
                   </div>
                   <div className="entry-actions">
