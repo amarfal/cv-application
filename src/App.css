@@ -1,23 +1,51 @@
 #root {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
 }
 
 .app-container {
   display: flex;
-  gap: 2rem;
-  align-items: flex-start;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  min-height: calc(100vh - 4rem);
 }
 
-.app-container > * {
-  flex: 1;
-  min-width: 0;
-}
-
-/* Responsive: stack vertically on smaller screens */
+/* Responsive: adjust padding on smaller screens */
 @media (max-width: 768px) {
+  #root {
+    padding: 1rem;
+  }
+
   .app-container {
-    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+}
+
+@media print {
+  body {
+    background: white;
+  }
+
+  #root {
+    max-width: none;
+    padding: 0;
+  }
+
+  .app-container {
+    box-shadow: none;
+    border-radius: 0;
+    padding: 1rem;
+  }
+
+  /* Hide edit buttons and forms in print mode */
+  button,
+  form {
+    display: none !important;
   }
 }
